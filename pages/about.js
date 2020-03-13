@@ -1,12 +1,11 @@
-import Header from '../components/Header';
+import Layout from '../UI/Layout';
 
 const About = props => {
 
   return (
-    <div>
-      <Header/>
+    <Layout>
       <p>This is the about page</p>
-    </div>
+    </Layout>
   );
 };
 
