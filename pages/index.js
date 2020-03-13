@@ -1,12 +1,9 @@
-import Layout from '../UI/Layout';
-
+import withLayout from '../hoc/withLayout';
 const Index = () => {
 
   return (
-    <Layout>
-      <p>Hello Next.js</p>
-    </Layout>
+    <p>Hello Next.js</p>
   );
 };
 
-export default Index;
+export default withLayout(Index);

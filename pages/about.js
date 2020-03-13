@@ -1,12 +1,10 @@
-import Layout from '../UI/Layout';
+import withLayout from '../hoc/withLayout';
 
 const About = props => {
 
   return (
-    <Layout>
-      <p>This is the about page</p>
-    </Layout>
+    <p>This is the about page</p>
   );
 };
 
-export default About;
+export default withLayout(About);

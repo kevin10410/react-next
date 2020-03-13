@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import Header from '../components/Header';
 
 const DivLayout = styled.div`
-  margin: 20;
-padding: 20;
+  margin: 20px;
+  padding: 20px;
   border: 1px solid #DDD;
 `;
 
-const Layout = props => {
+const withLayout = Page => {
 
-  return (
+  return () => (
     <DivLayout>
       <Header/>
-      { props.children }
+      <Page/>
     </DivLayout>
   )
 };
 
-export default Layout;
+export default withLayout;
