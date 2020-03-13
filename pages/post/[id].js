@@ -1,15 +1,15 @@
 import { useRouter } from 'next/router';
-import withLayout from '../../hoc/withLayout';
+import Layout from '../../components/UI/Layout';
 
 const Post = props => {
   const router = useRouter();
 
   return (
-    <>
+    <Layout>
       <h1>{ router.query.id }</h1>
       <p>This is the blog post content.</p>
-    </>
+    </Layout>
   );
 };
 
-export default withLayout(Post);
+export default Post;
