@@ -5,10 +5,10 @@ const PostLink = props => {
   return (
     <li>
       <Link
-        href="/post/[id]"
+        href={`/post/[${props.id}]`}
         as={`/post/${props.id}`}
       >
-        <a>{props.id}</a>
+        <a>{props.name}</a>
       </Link>
   </li>
   )
